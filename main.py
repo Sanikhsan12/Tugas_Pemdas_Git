@@ -50,3 +50,7 @@ for key, value in data_panen.items():
     print(f'Berikut adalah hasil Panen di {value["nama_lokasi"]}')
 print('\n')
 
+# jawaban soal 2
+# outputkan hasil panen jagung di lokasi 2
+print('Jawaban Soal 2')
+print(f'hasil panen jagung di lokasi 2 adalah {data_panen["lokasi2"]["hasil_panen"]["jagung"]}')
