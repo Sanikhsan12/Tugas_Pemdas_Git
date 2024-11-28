@@ -47,10 +47,14 @@ print('Jawaban Soal 1')
 for key, value in data_panen.items():
     print(f'tempat = {key}')
     print(f'nama lokasi = {value["nama_lokasi"]}')
-    print(f'Berikut adalah hasil Panen di {value["nama_lokasi"]}')
-print('\n')
+    print(f'Berikut adalah hasil Panen di {value["nama_lokasi"]}\n')
 
 # jawaban soal 2
 # outputkan hasil panen jagung di lokasi 2
 print('Jawaban Soal 2')
-print(f'hasil panen jagung di lokasi 2 adalah {data_panen["lokasi2"]["hasil_panen"]["jagung"]}')
+print(f'hasil panen jagung di lokasi 2 adalah {data_panen["lokasi2"]["hasil_panen"]["jagung"]}\n')
+
+# jawaban soal 3
+# tampilkan nama lokasi dari lokasi 3
+print('Jawaban Soal 3')
+print(f'nama lokasi dari lokasi 3 adalah {data_panen["lokasi3"]["nama_lokasi"]}\n')
