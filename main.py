@@ -58,3 +58,23 @@ print(f'hasil panen jagung di lokasi 2 adalah {data_panen["lokasi2"]["hasil_pane
 # tampilkan nama lokasi dari lokasi 3
 print('Jawaban Soal 3')
 print(f'nama lokasi dari lokasi 3 adalah {data_panen["lokasi3"]["nama_lokasi"]}\n')
+
+# jawaban soal 4
+# memasukan hasil panen padi dan kedelai setipa lokasi ke dalam variabel berbeda
+# padi
+padi_lok1 = data_panen['lokasi1']['hasil_panen']['padi']
+padi_lok2 = data_panen['lokasi2']['hasil_panen']['padi']
+padi_lok3 = data_panen['lokasi3']['hasil_panen']['padi']
+padi_lok4 = data_panen['lokasi4']['hasil_panen']['padi']
+padi_lok5 = data_panen['lokasi5']['hasil_panen']['padi']
+
+# kedelai
+kedelai_lok1 = data_panen['lokasi1']['hasil_panen']['kedelai']
+kedelai_lok2 = data_panen['lokasi2']['hasil_panen']['kedelai']
+kedelai_lok3 = data_panen['lokasi3']['hasil_panen']['kedelai']
+kedelai_lok4 = data_panen['lokasi4']['hasil_panen']['kedelai']
+kedelai_lok5 = data_panen['lokasi5']['hasil_panen']['kedelai']
+
+print('Jawaban Soal 4')
+print(f'hasil panen padi di setiap lokasi adalah lok 1 = {padi_lok1}, lok 2 = {padi_lok2}, lok 3 = {padi_lok3}, lok 4 = {padi_lok4}, lok 5 ={padi_lok5}')
+print(f'hasil panen kedelai di setiap lokasi adalah lok 1 = {kedelai_lok1}, lok 2 = {kedelai_lok2}, lok 3 = {kedelai_lok3}, lok 4 = {kedelai_lok4}, lok 5 ={kedelai_lok5}\n')
