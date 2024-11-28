@@ -78,3 +78,25 @@ kedelai_lok5 = data_panen['lokasi5']['hasil_panen']['kedelai']
 print('Jawaban Soal 4')
 print(f'hasil panen padi di setiap lokasi adalah lok 1 = {padi_lok1}, lok 2 = {padi_lok2}, lok 3 = {padi_lok3}, lok 4 = {padi_lok4}, lok 5 ={padi_lok5}')
 print(f'hasil panen kedelai di setiap lokasi adalah lok 1 = {kedelai_lok1}, lok 2 = {kedelai_lok2}, lok 3 = {kedelai_lok3}, lok 4 = {kedelai_lok4}, lok 5 ={kedelai_lok5}\n')
+
+
+# jawaban soal 5
+# kondisional status hasil panen
+status_panen = {}
+print('Jawaban Soal 5')
+for key, value in data_panen.items():
+    padi = value['hasil_panen']['padi']
+    jagung = value['hasil_panen']['jagung']
+    nama_lokasi = value['nama_lokasi']
+
+    if padi > 1300 or jagung > 800:
+        status = 'Memelukan perhatian khusus'
+    else:
+        status = 'Hasil panen dalam kondisi baik'
+
+    status_panen[nama_lokasi] = {
+        'status':status,
+    }
+
+for key, value in status_panen.items():
+    print(f'lokasi {key} dalam keadaan {value["status"]}')
