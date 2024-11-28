@@ -1,1 +1,1 @@
-ini file read me di branch master 
+ini file redme di branch master
